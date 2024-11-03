@@ -1,0 +1,5 @@
+env: []
+providers:
+  - Laravel\Tinker\TinkerServiceProvider
+  - Ilyes512\HttpLogger\HttpLoggerServiceProvider
+dont-discover: []

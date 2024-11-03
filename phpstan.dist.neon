@@ -1,0 +1,16 @@
+includes:
+	- phpstan-baseline.neon
+
+parameters:
+	level: max
+	tmpDir: ./.phpstan.cache
+	noEnvCallsOutsideOfConfig: true
+	checkModelProperties: true
+	paths:
+		- src
+		- config
+		- tests
+	stubFiles:
+		- stubs/BackedEnum.php.stub
+	# ignoreErrors:
+	# 	- '#^Enum .*? has @implements tag, but does not implement any interface.$#'

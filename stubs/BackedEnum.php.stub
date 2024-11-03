@@ -1,0 +1,8 @@
+<?php
+
+/** @template T of int|string */
+interface BackedEnum
+{
+    /** @var T */
+    public $value;
+}
