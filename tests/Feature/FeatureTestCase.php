@@ -23,7 +23,7 @@ abstract class FeatureTestCase extends OrchestraTestbench
     {
         parent::setUp();
 
-        mt_srand(1337, MT_RAND_PHP);
+        mt_srand(1337);
     }
 
     /**
