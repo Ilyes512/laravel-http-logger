@@ -39,7 +39,10 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": "[ $COMPOSER_DEV_MODE -eq 0 ] || testbench optimize:clear",
+        "post-autoload-dump": [
+            "@clear",
+            "@prepare"
+        ],
         "checkall": [
             "composer validate",
             "@lint",
@@ -59,7 +62,15 @@
         "checkstyle": "XDEBUG_MODE=off phpcs -n",
         "fixstyle": "XDEBUG_MODE=off phpcbf -n",
         "checktype": "XDEBUG_MODE=off phpstan analyse --memory-limit=-1 -v",
-        "update-type-baseline": "XDEBUG_MODE=off phpstan --generate-baseline"
+        "update-type-baseline": "XDEBUG_MODE=off phpstan --generate-baseline",
+        "clear": "testbench package:purge-skeleton",
+        "prepare": "testbench package:discover",
+        "build": "testbench workbench:build",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@build",
+            "testbench serve"
+        ]
     },
     "extra": {
         "branch-alias": {
