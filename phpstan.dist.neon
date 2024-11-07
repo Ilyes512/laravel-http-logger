@@ -12,5 +12,8 @@ parameters:
 		- tests
 	stubFiles:
 		- stubs/BackedEnum.php.stub
-	# ignoreErrors:
+	ignoreErrors:
+		-
+			identifier: larastan.noEnvCallsOutsideOfConfig
+			path: config
 	# 	- '#^Enum .*? has @implements tag, but does not implement any interface.$#'
