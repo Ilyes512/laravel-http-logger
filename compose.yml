@@ -5,7 +5,7 @@ services:
   php:
     user: ${FIXUID:-1000}:${FIXGID:-1000}
     command: ["sh", "-c", "trap : 15 ; sleep 9999d & wait"]
-    entrypoint: ["fixuid"]
+    entrypoint: ["fixuid", "-q"]
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
