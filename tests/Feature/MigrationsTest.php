@@ -8,9 +8,9 @@ use Illuminate\Config\Repository as Config;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
-use Ilyes512\HttpLogger\Eloquent\HttpLoggerEvent;
-use Ilyes512\HttpLogger\Eloquent\HttpLoggerRequest;
-use Ilyes512\HttpLogger\Eloquent\HttpLoggerResponse;
+use Ilyes512\HttpLogger\Models\HttpLoggerEvent;
+use Ilyes512\HttpLogger\Models\HttpLoggerRequest;
+use Ilyes512\HttpLogger\Models\HttpLoggerResponse;
 use Orchestra\Testbench\Attributes\DefineEnvironment;
 
 class MigrationsTest extends FeatureTestCase
