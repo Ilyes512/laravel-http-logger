@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Ilyes512\HttpLogger\Models\HttpLoggerEvent;
 
 return new class extends Migration
 {
@@ -16,8 +17,8 @@ return new class extends Migration
 
         Schema::connection($connection)
             ->create('http_logger_responses', static function (Blueprint $table) {
-                $table->ulid();
-                $table->foreignId('http_logger_event_id')->constrained();
+                $table->ulid('id')->primary();
+                $table->foreignIdFor(HttpLoggerEvent::class)->constrained();
                 $table->timestamps();
             });
     }

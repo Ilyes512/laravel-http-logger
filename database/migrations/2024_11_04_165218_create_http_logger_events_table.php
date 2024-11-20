@@ -16,7 +16,7 @@ return new class extends Migration
 
         Schema::connection($connection)
             ->create('http_logger_events', static function (Blueprint $table) {
-                $table->ulid();
+                $table->ulid('id')->primary();
                 $table->string('user_model')->nullable();
                 $table->string('user_id')->nullable();
                 $table->timestamps();
