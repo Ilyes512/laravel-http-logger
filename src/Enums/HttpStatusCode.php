@@ -12,7 +12,7 @@ use Ilyes512\EnumUtils\HasBackedEnumUtils;
  *
  * @implements BackedEnum<int>
  */
-enum HttpCode: int
+enum HttpStatusCode: int
 {
     /** @use HasBackedEnumUtils<int> */
     use HasBackedEnumUtils;
@@ -171,7 +171,7 @@ enum HttpCode: int
     }
 
     /**
-     * @return list<HttpCode>
+     * @return list<HttpStatusCode>
      */
     public static function allInformational(): array
     {
@@ -189,7 +189,7 @@ enum HttpCode: int
     }
 
     /**
-     * @return list<HttpCode>
+     * @return list<HttpStatusCode>
      */
     public static function allSuccessful(): array
     {
@@ -213,7 +213,7 @@ enum HttpCode: int
     }
 
     /**
-     * @return list<HttpCode>
+     * @return list<HttpStatusCode>
      */
     public static function allRedirection(): array
     {
@@ -236,7 +236,7 @@ enum HttpCode: int
     }
 
     /**
-     * @return list<HttpCode>
+     * @return list<HttpStatusCode>
      */
     public static function allClientError(): array
     {
@@ -279,7 +279,7 @@ enum HttpCode: int
     }
 
     /**
-     * @return list<HttpCode>
+     * @return list<HttpStatusCode>
      */
     public static function allServerError(): array
     {
