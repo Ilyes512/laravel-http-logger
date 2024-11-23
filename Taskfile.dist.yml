@@ -47,7 +47,6 @@ tasks:
     cmds:
       - task: dc
         vars: { DOCKER_COMPOSE_ARGS: "up --detach --no-recreate" }
-      - task: composer:update
 
   stop:
     desc: Stop development environment
@@ -72,6 +71,15 @@ tasks:
       - task: down
       - task: down
       - task: up
+
+  refresh:
+    desc: Refresh the development environment
+    summary: |
+      Refresh the development environment by rebuilding all images, downing the environment, and starting it again.
+    cmds:
+      - task: up
+      - task: composer:update
+      - task: checkall
 
   ps:
     desc: Show all project container (including stopped ones)
