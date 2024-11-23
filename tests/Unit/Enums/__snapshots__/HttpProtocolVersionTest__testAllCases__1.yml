@@ -1,0 +1,15 @@
+-
+    name: HTTP_0_9
+    value: HTTP/0.9
+-
+    name: HTTP_1_0
+    value: HTTP/1.0
+-
+    name: HTTP_1_1
+    value: HTTP/1.1
+-
+    name: HTTP_2_0
+    value: HTTP/2.0
+-
+    name: HTTP_3_0
+    value: HTTP/3.0
