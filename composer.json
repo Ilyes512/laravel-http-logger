@@ -12,6 +12,7 @@
         "php": ">=8.3",
         "illuminate/database": "^11.0",
         "illuminate/support": "^11.0",
+        "ilyes512/laravel-enum-utils": "^0.1.0",
         "webmozart/assert": "^1.10"
     },
     "require-dev": {
