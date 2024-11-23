@@ -28,7 +28,8 @@
         "phpstan/phpstan-strict-rules": "^1.6",
         "phpstan/phpstan-webmozart-assert": "^1.2",
         "phpunit/phpunit": "^11.1",
-        "shipmonk/phpstan-rules": "^3.1"
+        "shipmonk/phpstan-rules": "^3.1",
+        "spatie/phpunit-snapshot-assertions": "^5.1"
     },
     "autoload": {
         "psr-4": {
@@ -65,6 +66,7 @@
         "fixstyle": "XDEBUG_MODE=off phpcbf -n",
         "checktype": "XDEBUG_MODE=off phpstan analyse --memory-limit=-1 -v",
         "update-type-baseline": "XDEBUG_MODE=off phpstan --generate-baseline",
+        "update-test-snapshots": "XDEBUG_MODE=off vendor/bin/phpunit -d --update-snapshots",
         "clear": "testbench package:purge-skeleton",
         "prepare": "testbench package:discover",
         "build": "testbench workbench:build",
@@ -101,6 +103,7 @@
         "checkstyle": "Check code style using php_codesniffer",
         "fixstyle": "Fix code style using php_codesniffer",
         "checktype": "Check code type using PHPStan",
-        "update-type-baseline": "Update PHPStan baseline"
+        "update-type-baseline": "Update PHPStan baseline",
+        "update-test-snapshots": "Update PHPUnit snapshots"
     }
 }
