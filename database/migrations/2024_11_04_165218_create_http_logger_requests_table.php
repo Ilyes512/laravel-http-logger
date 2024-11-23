@@ -19,6 +19,11 @@ return new class extends Migration
             ->create('http_logger_requests', static function (Blueprint $table) {
                 $table->ulid('id')->primary();
                 $table->foreignIdFor(HttpLoggerEvent::class)->constrained();
+                $table->string('method');
+                $table->string('uri');
+                $table->string('ip')->nullable();
+                $table->string('route_fingerprint')->nullable()->index();
+                $table->boolean('prefetch');
                 $table->timestamps();
             });
     }

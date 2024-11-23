@@ -19,6 +19,12 @@ return new class extends Migration
             ->create('http_logger_responses', static function (Blueprint $table) {
                 $table->ulid('id')->primary();
                 $table->foreignIdFor(HttpLoggerEvent::class)->constrained();
+                $table->unsignedInteger('status_code');
+                $table->string('protocol_version');
+                $table->string('charset')->nullable();
+                $table->string('content_type')->nullable();
+                $table->integer('content_length')->nullable();
+                $table->string('content_transfer_encoding')->nullable();
                 $table->timestamps();
             });
     }

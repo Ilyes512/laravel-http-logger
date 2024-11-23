@@ -8,15 +8,10 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Ilyes512\HttpLogger\Models\HttpLoggerEvent;
 
 /**
- * @template TModel of HttpLoggerEvent
- *
- * @extends Factory<TModel>
+ * @extends Factory<HttpLoggerEvent>
  */
 class HttpLoggerEventFactory extends Factory
 {
-    /**
-     * @var class-string<TModel>
-     */
     protected $model = HttpLoggerEvent::class;
 
     /**

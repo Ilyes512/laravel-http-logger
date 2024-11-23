@@ -22,7 +22,7 @@ class HttpLoggerEvent extends Model
     use HasUlids;
 
     /**
-     * @var class-string<HttpLoggerEventFactory<static>>
+     * @var class-string<HttpLoggerEventFactory>
      */
     private static string $factory = HttpLoggerEventFactory::class;
 }
