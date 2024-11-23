@@ -1,0 +1,567 @@
+-
+    description: Continue
+    informational: true
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_CONTINUE
+    value: 100
+-
+    description: 'Switching Protocols'
+    informational: true
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_SWITCHING_PROTOCOLS
+    value: 101
+-
+    description: Processing
+    informational: true
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_PROCESSING
+    value: 102
+-
+    description: 'Early Hints'
+    informational: true
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_EARLY_HINTS
+    value: 103
+-
+    description: OK
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_OK
+    value: 200
+-
+    description: Created
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_CREATED
+    value: 201
+-
+    description: Accepted
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_ACCEPTED
+    value: 202
+-
+    description: 'Non-Authoritative Information'
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_NON_AUTHORITATIVE_INFORMATION
+    value: 203
+-
+    description: 'No Content'
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_NO_CONTENT
+    value: 204
+-
+    description: 'Reset Content'
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_RESET_CONTENT
+    value: 205
+-
+    description: 'Partial Content'
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_PARTIAL_CONTENT
+    value: 206
+-
+    description: Multi-Status
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_MULTI_STATUS
+    value: 207
+-
+    description: 'Already Reported'
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_ALREADY_REPORTED
+    value: 208
+-
+    description: 'IM Used'
+    informational: false
+    successful: true
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_IM_USED
+    value: 226
+-
+    description: 'Multiple Choices'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_MULTIPLE_CHOICES
+    value: 300
+-
+    description: 'Moved Permanently'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_MOVED_PERMANENTLY
+    value: 301
+-
+    description: Found
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_FOUND
+    value: 302
+-
+    description: 'See Other'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_SEE_OTHER
+    value: 303
+-
+    description: 'Not Modified'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_NOT_MODIFIED
+    value: 304
+-
+    description: 'Use Proxy'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_USE_PROXY
+    value: 305
+-
+    description: (Unused)
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_RESERVED
+    value: 306
+-
+    description: 'Temporary Redirect'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_TEMPORARY_REDIRECT
+    value: 307
+-
+    description: 'Permanent Redirect'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: false
+    name: HTTP_PERMANENTLY_REDIRECT
+    value: 308
+-
+    description: 'Bad Request'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_BAD_REQUEST
+    value: 400
+-
+    description: Unauthorized
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_UNAUTHORIZED
+    value: 401
+-
+    description: 'Payment Required'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_PAYMENT_REQUIRED
+    value: 402
+-
+    description: Forbidden
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_FORBIDDEN
+    value: 403
+-
+    description: 'Not Found'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_NOT_FOUND
+    value: 404
+-
+    description: 'Method Not Allowed'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_METHOD_NOT_ALLOWED
+    value: 405
+-
+    description: 'Not Acceptable'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_NOT_ACCEPTABLE
+    value: 406
+-
+    description: 'Proxy Authentication Required'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_PROXY_AUTHENTICATION_REQUIRED
+    value: 407
+-
+    description: 'Request Timeout'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_REQUEST_TIMEOUT
+    value: 408
+-
+    description: Conflict
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_CONFLICT
+    value: 409
+-
+    description: Gone
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_GONE
+    value: 410
+-
+    description: 'Length Required'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_LENGTH_REQUIRED
+    value: 411
+-
+    description: 'Precondition Failed'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_PRECONDITION_FAILED
+    value: 412
+-
+    description: 'Content Too Large'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_REQUEST_ENTITY_TOO_LARGE
+    value: 413
+-
+    description: 'URI Too Long'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_REQUEST_URI_TOO_LONG
+    value: 414
+-
+    description: 'Unsupported Media Type'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_UNSUPPORTED_MEDIA_TYPE
+    value: 415
+-
+    description: 'Range Not Satisfiable'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_REQUESTED_RANGE_NOT_SATISFIABLE
+    value: 416
+-
+    description: 'Expectation Failed'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_EXPECTATION_FAILED
+    value: 417
+-
+    description: "I'm a teapot"
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_I_AM_A_TEAPOT
+    value: 418
+-
+    description: 'Misdirected Request'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_MISDIRECTED_REQUEST
+    value: 421
+-
+    description: 'Unprocessable Content'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_UNPROCESSABLE_ENTITY
+    value: 422
+-
+    description: Locked
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_LOCKED
+    value: 423
+-
+    description: 'Failed Dependency'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_FAILED_DEPENDENCY
+    value: 424
+-
+    description: 'Too Early'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_TOO_EARLY
+    value: 425
+-
+    description: 'Upgrade Required'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_UPGRADE_REQUIRED
+    value: 426
+-
+    description: 'Precondition Required'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_PRECONDITION_REQUIRED
+    value: 428
+-
+    description: 'Too Many Requests'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_TOO_MANY_REQUESTS
+    value: 429
+-
+    description: 'Request Header Fields Too Large'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE
+    value: 431
+-
+    description: 'Unavailable For Legal Reasons'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: true
+    serverError: false
+    name: HTTP_UNAVAILABLE_FOR_LEGAL_REASONS
+    value: 451
+-
+    description: 'Internal Server Error'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_INTERNAL_SERVER_ERROR
+    value: 500
+-
+    description: 'Not Implemented'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_NOT_IMPLEMENTED
+    value: 501
+-
+    description: 'Bad Gateway'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_BAD_GATEWAY
+    value: 502
+-
+    description: 'Service Unavailable'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_SERVICE_UNAVAILABLE
+    value: 503
+-
+    description: 'Gateway Timeout'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_GATEWAY_TIMEOUT
+    value: 504
+-
+    description: 'HTTP Version Not Supported'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_VERSION_NOT_SUPPORTED
+    value: 505
+-
+    description: 'Variant Also Negotiates'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL
+    value: 506
+-
+    description: 'Insufficient Storage'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_INSUFFICIENT_STORAGE
+    value: 507
+-
+    description: 'Loop Detected'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_LOOP_DETECTED
+    value: 508
+-
+    description: 'Not Extended'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_NOT_EXTENDED
+    value: 510
+-
+    description: 'Network Authentication Required'
+    informational: false
+    successful: false
+    redirection: false
+    clientError: false
+    serverError: true
+    name: HTTP_NETWORK_AUTHENTICATION_REQUIRED
+    value: 511
