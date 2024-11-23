@@ -20,4 +20,4 @@ parameters:
 			identifier: property.onlyWritten
 			message: '#Static property [a-zA-Z0-9\\_]+::\$factory#'
 			path: src/Models
-	# 	- '#^Enum .*? has @implements tag, but does not implement any interface.$#'
+		- '#^Enum .*? has @implements tag, but does not implement any interface.$#'
