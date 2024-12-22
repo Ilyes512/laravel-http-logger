@@ -1,0 +1,36 @@
+-
+    safe: true
+    idempotent: true
+    name: GET
+-
+    safe: true
+    idempotent: true
+    name: HEAD
+-
+    safe: true
+    idempotent: true
+    name: OPTIONS
+-
+    safe: true
+    idempotent: true
+    name: TRACE
+-
+    safe: false
+    idempotent: false
+    name: PUT
+-
+    safe: false
+    idempotent: true
+    name: DELETE
+-
+    safe: false
+    idempotent: false
+    name: POST
+-
+    safe: false
+    idempotent: false
+    name: PATCH
+-
+    safe: false
+    idempotent: false
+    name: CONNECT
